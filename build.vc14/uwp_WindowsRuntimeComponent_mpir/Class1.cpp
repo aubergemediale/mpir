@@ -1,5 +1,6 @@
 ﻿#include "pch.h"
 #include "Class1.h"
+#include "..\uwp_dll_mpir_gc\Calculator.h"
 
 using namespace uwp_WindowsRuntimeComponent_mpir;
 using namespace Platform;
@@ -16,5 +17,7 @@ int Class1::Add(int a, int b)
 int Class1::MpirAdd(int a, int b)
 {
 	// TODO: use mpir
-	return a + b;
+	Calculator* calc = new Calculator();
+	return calc->Add(a, b);
+	//return a + b;
 }

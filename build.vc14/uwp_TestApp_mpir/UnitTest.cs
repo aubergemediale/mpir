@@ -1,5 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestPlatform.UnitTestFramework;
+using uwp_WindowsRuntimeComponent_mpir;
 
 namespace uwp_TestApp_mpir
 {
@@ -7,8 +8,19 @@ namespace uwp_TestApp_mpir
     public class UnitTest1
     {
         [TestMethod]
-        public void TestMethod1()
+        public void CallWRC()
         {
+            var test = new Class1();
+            var result = test.Add(3, 3);
+            Assert.AreEqual(6,result);
+        }
+
+        [TestMethod]
+        public void CallDLL()
+        {
+            var test = new Class1();
+            var result = test.MpirAdd(3, 3);
+            Assert.AreEqual(6, result);
         }
     }
 }
