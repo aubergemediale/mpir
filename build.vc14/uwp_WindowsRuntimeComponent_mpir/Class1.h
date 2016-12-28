@@ -8,5 +8,7 @@ namespace uwp_WindowsRuntimeComponent_mpir
         Class1();
 		int Add(int a, int b);
 		int MpirAdd(int a, int b);
+		int MpirAdd2(int a, int b);
+	
     };
 }

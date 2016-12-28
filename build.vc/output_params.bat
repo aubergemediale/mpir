@@ -1,4 +1,4 @@
-(set ldir=dll_mpir_gc\)   
-(set libr=dll) 
+(set ldir=lib_mpir_k8\)   
+(set libr=lib) 
 (set plat=x64) 
 (set conf=Debug) 

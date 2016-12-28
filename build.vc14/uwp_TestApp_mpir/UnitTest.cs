@@ -22,5 +22,13 @@ namespace uwp_TestApp_mpir
             var result = test.MpirAdd(3, 3);
             Assert.AreEqual(6, result);
         }
+
+        [TestMethod]
+        public void CallMpirAdd()
+        {
+            var test = new Class1();
+            var result = test.MpirAdd2(3, 3);
+            Assert.AreEqual(6, result);
+        }
     }
 }

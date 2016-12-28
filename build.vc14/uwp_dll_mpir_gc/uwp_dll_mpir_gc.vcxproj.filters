@@ -389,6 +389,7 @@
     <ClCompile Include="fft\normmod_2expp1.c" />
     <ClCompile Include="fft\revbin.c" />
     <ClCompile Include="fft\split_bits.c" />
+    <ClCompile Include="version.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="uwp_dll_mpir_gc.h" />
